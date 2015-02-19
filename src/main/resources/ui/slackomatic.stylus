@@ -2,6 +2,8 @@ body
    background-color: black
    color: #fefefe
 main
+   word-wrap: break-word
+   hypens: auto
    font-family: sans-serif
    background-color: #1d574b
    color: #c5e8b9
@@ -22,7 +24,7 @@ button
    margin: 0
    border: none
    flex: 1 1 auto
-   height: 2rem
+   min-height: 2rem
 
 
 .two-value-chooser
@@ -44,6 +46,7 @@ button
 
 .masonry-buttons
    display: flex
-   flex-direction: column
+   flex-direction: row
+   flex-wrap: wrap
 button.select-input
-   background-color: tomato
+   flex: 1 0 50%;
