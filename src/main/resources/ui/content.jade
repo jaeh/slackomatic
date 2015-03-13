@@ -1,11 +1,23 @@
-main
-   div.full-width.two-value-chooser
-      span.button-description.
-         Set Master:
-      button.off Off
-      button.on On
-   span.description.
-      The audio and video of the selected device will be shown on the projector and played on the hifi. To display stuff from your own HDMI capable device just connect the black spare HDMI cable and select "My own HDMI port".
-   div.masonry-buttons
-      button.select-input ScreenInvader
+div.full-width.two-value-chooser
+   span.button-description.
+      Set Master:
+   button.off Off
+   button.on On
+span.description.
+   The audio and video of the selected device will be shown on the projector and played on the hifi. To display stuff from your own HDMI capable device just connect the black spare HDMI cable and select "My own HDMI port".
+div.masonry-buttons
+   - each inputDevice in ["ScreenInvader", "Chromecast", "PS2", "PS3", "Wii", "My own HDMI port", "Bluetooth Audio"]
+      button.select-input= inputDevice
 
+div.masonry-buttons
+   - each controlDevice in ["Projector Blank", "Projector", "Television", "Amplifier", "Metacade", "Square Lamp"]
+      div.full-width.two-value-chooser
+         span.button-description
+            |Set 
+            =controlDevice
+         button.off Off
+         button.on On
+span.description
+   h2|Any questions, need help?
+   |If you are not familiar with the setup and something doesn't work as expected please ask a fellow hacker/hackette around first before attempting to "fix it"™ yourself.
+   You might also take a look at the <a href="/troubleshooting.html" alt="Short slackomatic troubleshooting guide">troubleshooting guide</a>.
