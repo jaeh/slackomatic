@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  color: #fefefe;
+}
+main {
+  word-wrap: break-word;
+  hypens: auto;
+  font-family: sans-serif;
+  background-color: #1d574b;
+  color: #c5e8b9;
+  width: 40rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+main > span {
+  margin: 0.86rem 1rem 1.3rem;
+}
+.full-width {
+  flex-basis: 100%;
+}
+button {
+  background-color: #c5e8b9;
+  padding: 0;
+  margin: 0;
+  border: none;
+  flex: 1 1 auto;
+  min-height: 2rem;
+}
+.two-value-chooser {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.two-value-chooser :first-child {
+  padding-left: 0.4rem;
+}
+.button-description {
+  flex: 2 1 auto;
+}
+.masonry-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+button.select-input {
+  flex: 1 0 50%;
+}
